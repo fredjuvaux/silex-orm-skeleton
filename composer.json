@@ -1,6 +1,6 @@
 {
-    "name": "fabpot/silex-skeleton",
-    "description": "A pre-configured skeleton for the Silex microframework",
+    "name": "fredjuvaux/silex-orm-skeleton",
+    "description": "A pre-configured skeleton for the Silex microframework with doctrine ORM and bootstrap config.",
     "license": "MIT",
     "type": "project",
     "require": {
