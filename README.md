@@ -5,6 +5,12 @@ Silex skeleton with doctrine ORM, bootstrap and CRUD example.
 
 For doctrine documentation see symfony and doctrine docs.
 
+Install:
+
+```bash
+cd /path/to/your_project/vendor
+git clone git@github.com:fredjuvaux/silex-orm-skeleton.git
+```
 
 Install composer:
 ```bash
