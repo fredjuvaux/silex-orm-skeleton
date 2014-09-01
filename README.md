@@ -40,7 +40,7 @@ $app->register(new DoctrineServiceProvider(), array(
 Create database, then generate tables with CLI tool (for acme demo by example):
 
 ```bash
-php bin/console doctrine:schema:update --force
+php bin/console orm:schema-tool:update --force
 ```
 
 Commands available:
