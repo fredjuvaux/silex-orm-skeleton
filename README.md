@@ -31,7 +31,7 @@ $app->register(new DoctrineServiceProvider(), array(
 ));
 ```
 
-Create database then generate tables with CLI tool (for acme demo):
+Create database, then generate tables with CLI tool (for acme demo by example):
 
 ```bash
 php bin/console doctrine:schema:update --force
@@ -67,4 +67,14 @@ orm
   orm:schema-tool:drop             Drop the complete database schema of EntityManager Storage Connection or generate the corresponding SQL output.
   orm:schema-tool:update           Executes (or dumps) the SQL needed to update the database schema to match the current mapping metadata.
   orm:validate-schema              Validate that the mapping files.
+```
+
+Acme CRUD demo routes:
+
+```bash
+/path/to/your_project/acme/
+/path/to/your_project/acme/create
+/path/to/your_project/acme/show/{id}
+/path/to/your_project/acme/update/{id}
+/path/to/your_project/acme/delete/{id}
 ```
