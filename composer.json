@@ -21,7 +21,7 @@
         "symfony/translation": "~2.3",
         "symfony/twig-bridge": "~2.3",
         "symfony/validator": "2.5.2",
-        "nutwerk/doctrine-orm-provider": "1.0.*@dev"
+        "fredjuvaux/doctrine-orm-provider": "1.0.*@dev"
     },
     "autoload": {
         "psr-0": {
