@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}List entities{% endblock title %}
+{% block description %}{% endblock description %}
+{% block h1 %}<h1>List entities <a href="{{ path('acme_create') }}" class="btn btn-default">Add entity</a></h1>{% endblock h1 %}
+
+{% block content %}
+    <ul>
+        {% for entity in entities %}
+            <li>Id : {{ entity.id }}, Title : {{ entity.title }} || 
+                <a href="{{ path('acme_show', {id: entity.id}) }}"><span class="glyphicon glyphicon-info-sign"></span></a> 
+                <a href="{{ path('acme_update', {id: entity.id}) }}"><span class="glyphicon glyphicon-edit"></span></a> 
+                <a href="{{ path('acme_delete', {id: entity.id}) }}"><span class="glyphicon glyphicon-trash"></span></a>
+            </li>      
+        {% endfor %}
+    </ul>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% if app.session.flashBag is defined %}
+    {% set alertTypes = ['success', 'info', 'warning', 'danger'] %}
+    {% for alertType in alertTypes %}
+        {% for message in app.session.flashBag.get(alertType) %}
+            {% if loop.first %}
+                <div class="alert alert-{{ alertType }} alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            {% endif %}
+            <p>{{ message }}</p>
+            {% if loop.last %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}

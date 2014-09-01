@@ -1,0 +1,10 @@
+
+input[type="submit"] {
+    margin-top: 1em;
+}
+
+h1 a.btn {
+    position: relative;
+    top: -4px;
+    margin-left: 2em;
+}

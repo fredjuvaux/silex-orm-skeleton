@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{% endblock title %}
+{% block description %}{% endblock description %}
+{% block h1 %}<h1>Show entity</h1>{% endblock h1 %}
+
+{% block content %}
+    <div>Id : {{ entity.id }}</div>
+    <div>Title : {{ entity.title }}</div>
+{% endblock content %}

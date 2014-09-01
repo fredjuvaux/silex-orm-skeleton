@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{% endblock title %}
+{% block description %}{% endblock description %}
+{% block h1 %}<h1>Create entity</h1>{% endblock h1 %}
+
+{% block content %}
+    <div class="row">
+        <form action="{{ path('acme_create') }}" method="post" class="col-sm-4">
+            {{ form_widget(form, {form_type: 'vertical'}) }}
+            <input class="btn btn-primary" type="submit" name="submit" />
+        </form>
+    </div>
+{% endblock content %}
