@@ -31,13 +31,13 @@ $app->register(new DoctrineServiceProvider(), array(
 ));
 ```
 
-Create database and generate schema with CLI tool (for acme demo):
+Create database then generate tables with CLI tool (for acme demo):
 
 ```bash
 php bin/console doctrine:schema:update --force
 ```
 
-Commandes available:
+Commands available:
 
 ```bash
 php bin/console --info
