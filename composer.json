@@ -1,7 +1,16 @@
 {
     "name": "fredjuvaux/silex-orm-skeleton",
     "description": "A pre-configured skeleton for the Silex microframework with doctrine ORM and bootstrap config.",
+    "keywords": ["silex", "skeleton", "bootstrap", "doctrine", "orm", "database", "extension", "provider"],
     "license": "MIT",
+    "homepage": "https://github.com/fredjuvaux/silex-orm-skeleton",
+    "authors": [
+        { 
+            "name": "Fred Juvaux",
+            "homepage": "http://fredjuvaux.fr/",
+            "email": "hello@fredjuvaux.fr" 
+        }
+    ],
     "type": "project",
     "require": {
         "php": ">=5.3.3",
