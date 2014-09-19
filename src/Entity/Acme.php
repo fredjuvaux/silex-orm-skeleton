@@ -24,7 +24,7 @@ class Acme
 	/**
 	 * @var string
 	 *
-	 * @Column(name="title", type="string", length="255")
+	 * @Column(name="title", type="string", length=255)
 	 */
 	private $title;
 
