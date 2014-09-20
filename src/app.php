@@ -54,6 +54,13 @@ $app->register(new DoctrineORMServiceProvider(), array(
     )),
 ));
 
+$app['form.extensions'] = $app->share($app->extend('form.extensions', function ($extensions) use ($app) {
+    $manager = new Form\Extensions\Doctrine\Bridge\ManagerRegistry(null, array(), array('db.orm.em'), null, null, '\Doctrine\ORM\Proxy\Proxy');
+    $manager->setContainer($app);
+    $extensions[] = new Symfony\Bridge\Doctrine\Form\DoctrineOrmExtension($manager);
+    return $extensions;
+}));
+
 require __DIR__.'/routes.php';
 
 return $app;
