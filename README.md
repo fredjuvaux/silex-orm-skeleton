@@ -6,7 +6,6 @@ Silex skeleton with doctrine ORM, bootstrap and CRUD example.
 For doctrine documentation see symfony and doctrine docs.
 
 Install:
-
 ```bash
 cd /path/to/your_project/vendor
 git clone git@github.com:fredjuvaux/silex-orm-skeleton.git
@@ -19,7 +18,6 @@ curl -s https://getcomposer.org/installer | php
 More information on Composer can be found on [getcomposer.org](http://getcomposer.org/).
 
 And install your dependencies:
-
 ```bash
 php composer.phar install
 ```
@@ -38,13 +36,11 @@ $app->register(new DoctrineServiceProvider(), array(
 ```
 
 Create database, then generate tables with CLI tool (for acme demo by example):
-
 ```bash
 php bin/console orm:schema-tool:update --force
 ```
 
 Commands available:
-
 ```bash
 php bin/console --info
 ```
@@ -75,8 +71,12 @@ orm
   orm:validate-schema              Validate that the mapping files.
 ```
 
-Acme CRUD demo routes:
+Example:
+```bash
+php bin/console orm:generate-entities src
+```
 
+Acme CRUD demo routes:
 ```bash
 /path/to/your_project/acme/
 /path/to/your_project/acme/create
