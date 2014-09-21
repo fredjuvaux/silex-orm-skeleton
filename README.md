@@ -7,7 +7,7 @@ For doctrine documentation see symfony and doctrine docs.
 
 Install:
 ```bash
-cd /path/to/your_project/vendor
+cd /path/to/your_project
 git clone git@github.com:fredjuvaux/silex-orm-skeleton.git
 ```
 
