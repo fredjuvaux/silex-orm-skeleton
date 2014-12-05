@@ -1,0 +1,58 @@
+
+/* ==========================================================================
+   Import
+   ========================================================================== */
+
+@import "variables.less.css";
+@import "mixins.less.css";
+
+/* ==========================================================================
+   Nested rules
+   ========================================================================== */
+
+#header {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets) */
+@media (min-width: @screen-sm-min) {
+}
+
+/* Medium devices (laptop) */
+@media (min-width: @screen-md-min) {
+}
+
+/* Large devices (desktops) */
+@media (min-width: @screen-lg-min) {
+}
+
+
+
+/* Extra small devices only (phones) */
+@media (max-width: @screen-xs-max) {
+}
+
+/* Small devices only (tablets) */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+}
+
+/* Medium devices only (laptop) */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+}
+
+/* Large devices only (desktops) */
+@media (min-width: @screen-lg-min) {
+}
