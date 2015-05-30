@@ -9,7 +9,7 @@ use Silex\Provider\DoctrineServiceProvider;
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\SessionServiceProvider;
-use SilexORM\Provider\DoctrineORMServiceProvider;
+use ORM\Provider\DoctrineORMServiceProvider;
 
 $app = new Application();
 
