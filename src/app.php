@@ -9,6 +9,7 @@ use Silex\Provider\DoctrineServiceProvider;
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\SessionServiceProvider;
+use Silex\Provider\HttpFragmentServiceProvider;
 use ORM\Provider\DoctrineORMServiceProvider;
 
 $app = new Application();
@@ -18,6 +19,7 @@ $app->register(new ValidatorServiceProvider());
 $app->register(new ServiceControllerServiceProvider());
 $app->register(new TwigServiceProvider());
 $app->register(new FormServiceProvider());
+$app->register(new HttpFragmentServiceProvider());
 
 $app->register(new TranslationServiceProvider(), array(
     'translator.domains' => array(),
